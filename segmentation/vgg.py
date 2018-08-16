@@ -215,7 +215,7 @@ def vgg_16(inputs,
                                   normalizer_fn=None,
                                   scope='fc8')
                                   
-                net = slim.fully_connected(net, 1000, activation_fn=None, scope='fc8')
+                #net = slim.fully_connected(net, 1000, activation_fn=None, scope='fc8')
 
                 if spatial_squeeze and num_classes is not None:
                     net = tf.squeeze(net, [1, 2], name='fc8/squeezed')
